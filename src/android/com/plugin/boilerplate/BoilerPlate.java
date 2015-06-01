@@ -84,7 +84,7 @@ public class BoilerPlate extends CordovaPlugin {
 		String _d = "javascript:" + gReceiveMessage + "(" + _json.toString() + ")";
 		Log.v(TAG, "sendJavascript: " + _d);
 
-		if (gECB != null && gWebView != null) {
+		if (gReceiveMessage != null && gWebView != null) {
 			gWebView.sendJavascript(_d);
 		}
 	}
@@ -114,7 +114,7 @@ public class BoilerPlate extends CordovaPlugin {
     public void onDestroy() {
         super.onDestroy();
         gForeground = false;
-		gECB = null;
+		gReceiveMessage = null;
 		gWebView = null;
     }
 
