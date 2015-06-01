@@ -33,7 +33,7 @@
 		<config-file target="AndroidManifest.xml" parent="/manifest">
 		</config-file>
 
-		<source-file src="src/android/com/plugin/gcm/BoilerPlate.java" target-dir="src/com/plugin/boilerplate/" />
+		<source-file src="src/android/com/plugin/boilerplate/BoilerPlate.java" target-dir="src/com/plugin/boilerplate/" />
 		
 	</platform>
 </plugin>
